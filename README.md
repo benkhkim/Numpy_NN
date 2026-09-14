@@ -131,7 +131,7 @@ import numpy as np
 | `W -= lr * d_W` | `SGD(learning_rate=0.5)` | 동일한 업데이트 규칙 |
 | `for epoch in range(10000): ...` | `model.fit(..., epochs=10000)` | 학습 반복 자동화 |
 
-### 5.1 `model.fit()` 내부에서 실제로 벌어지는 일 (의사코드)
+### 5.1 `model.fit()` 내부에서 실제로 벌어지는 일 (모의코드)
 
 ```python
 with tf.GradientTape() as tape:      # 연산을 "테이프"에 기록 시작
